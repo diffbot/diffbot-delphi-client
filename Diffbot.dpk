@@ -1,0 +1,40 @@
+package Diffbot;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '(c) Diffbot'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl;
+
+contains
+  DiffbotIntf in 'DiffbotIntf.pas',
+  DiffbotNetUtils in 'DiffbotNetUtils.pas',
+  DiffbotObj in 'DiffbotObj.pas',
+  DiffbotResponse in 'DiffbotResponse.pas',
+  JsonObj in 'JsonObj.pas',
+  uJSON in 'uJSON.pas';
+
+end.
